@@ -10,10 +10,6 @@ var serveStatic = require('serve-static');
 const path = require('path');
 
 
-app.get('/', (req, res) => {
-  res.sendFile('/testServer/fobiro.html');
-});
-
 
 io.on('connection', (socket) => {
   console.log("user connected")
