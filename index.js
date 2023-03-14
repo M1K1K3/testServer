@@ -9,10 +9,9 @@ var connect = require('connect');
 var serveStatic = require('serve-static');
 const path = require('path');
 
-app.use(express.static(path.join('/var/www/html')));
 
 app.get('/', (req, res) => {
-  res.sendFile('/var/www/html/fobiro.html');
+  res.sendFile('fobiro.html');
 });
 
 
