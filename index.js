@@ -11,7 +11,7 @@ const path = require('path');
 
 
 app.get('/', (req, res) => {
-  res.sendFile('fobiro.html');
+  res.sendFile('/testServer/fobiro.html');
 });
 
 
